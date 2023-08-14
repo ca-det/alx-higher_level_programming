@@ -4,10 +4,9 @@
 /**
  * struct listint_s - singly linked list
  * @n: integer
- * @next: points to the next node
+ * @next: next node
  *
  * Description: singly linked list node structure
- * for Holberton project
  */
 typedef struct listint_s
 {
@@ -21,4 +20,4 @@ void free_listint(listint_t *head);
 
 int is_palindrome(listint_t **head);
 
-#endif /* LISTS_H */
+#endif
