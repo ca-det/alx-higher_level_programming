@@ -1,7 +1,13 @@
 #!/usr/bin/python3
-if __name__ == '__main__':
-    import hidden_4
-    d = dir
-    for i in range(0, len(d)):
-        if d[i][0:2] != "__":
-            print("{}".format(d[i]))
+import hidden_4
+
+
+def who():
+    find = dir(hidden_4)
+    for i in find:
+        if i[:2] != "__":
+            print("{:s}".format(i))
+
+
+if __name__ == "__main__":
+    who()
