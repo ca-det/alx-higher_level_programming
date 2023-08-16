@@ -2,5 +2,7 @@
 
 
 def square_matrix_simple(matrix[]):
-    new_list = [[x**2 for x in row] for row in matrix]
+    new_list = []
+    for x in matrix:
+        new_list.append(list(map(lambda y : y**2, x)))
     return new_list
